@@ -3,12 +3,14 @@ import { prodDataType } from "../../api/dummydata";
 import { screenWidth, useData } from "../../api/fetctData";
 import ProductCardSkeleton from "../skeletons/ProductCardSkeleton";
 import LazyLoad from "react-lazy-load";
+import { useNavigate } from "react-router-dom";
 
 
 const ProductCard = ({ prod_id, prod_name, prod_desc, prod_img, prod_price, prod_size }: prodDataType) => {
+  const navigate = useNavigate()
   const clickHandler = (id: number) => {
     const url = `/products/${id}`;
-    window.location.href = url;
+    navigate(url);
   }
 
 

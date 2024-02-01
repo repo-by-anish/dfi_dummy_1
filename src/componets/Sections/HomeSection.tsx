@@ -7,8 +7,10 @@ import Advertisement from "./Advertisement";
 import Partners from "./Partners";
 import Testimonials from "./Testmonials";
 import BlogSlider from "./BlogSlider";
+import useTitle from "../../api/useTitle";
 
 const HomeSection = (): JSX.Element => {
+    useTitle("Diamond Fruits International");
     const { isLoading } = useData();
     const { scrollYProgress } = useScroll();
 

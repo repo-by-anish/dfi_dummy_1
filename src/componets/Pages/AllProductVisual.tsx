@@ -2,11 +2,13 @@ import { useLocation } from "react-router-dom";
 import { useData } from "../../api/fetctData";
 import Products from "../Sections/Products";
 import Skeleton from '@mui/material/Skeleton';
-
+import LazyLoad from "react-lazy-load";
+import useTitle from "../../api/useTitle";
 const AllProductVisual = (): JSX.Element => {
+    useTitle("All Products");
     const { products, isLoading } = useData();
     const location = useLocation();
-
+    
     let content;
 
     if (isLoading) {
@@ -23,15 +25,17 @@ const AllProductVisual = (): JSX.Element => {
         );
     } else {
         content = (
-            <section>
-                <div className="products__header">
-                    <p className="path">{location.pathname}</p>
-                    <h1>All Products</h1>
-                </div>
-                <div className="all_product_visual">
-                    <Products products_to_render={products} />
-                </div>
-            </section>
+            <LazyLoad>
+                <section>
+                    <div className="products__header">
+                        <p className="path">{location.pathname}</p>
+                        <h1>All Products</h1>
+                    </div>
+                    <div className="all_product_visual">
+                        <Products products_to_render={products} />
+                    </div>
+                </section>
+            </LazyLoad>
         );
     }
 

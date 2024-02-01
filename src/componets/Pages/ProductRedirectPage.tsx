@@ -5,11 +5,13 @@ import "./pages.css"
 import Button from "../basics/Button";
 import { prodDataType } from "../../api/dummydata";
 import ProductCard from "../basics/ProductCard";
+import useTitle from "../../api/useTitle";
 
 const ProductRedirectPage = (): JSX.Element => {
     const { id } = useParams();
     const { products } = useData();
     const product = products.find((product) => product.prod_id === Number(id));
+    useTitle(`${product?.prod_name}`);
     
 
     const shuffleArray = (products: prodDataType[]) => {
