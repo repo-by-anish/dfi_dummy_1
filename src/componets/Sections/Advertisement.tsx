@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import VideoPlayer from '../basics/VideoPlayer';
-import LazyLoad from 'react-lazy-load';
 
 const Advertisement = (): JSX.Element => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -17,11 +16,9 @@ const Advertisement = (): JSX.Element => {
                         className="advertisement-video"
                         alt=''
                         style={{ visibility: isPlaying ? 'hidden' : 'visible' }}
-                        src={"https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI/video/poster.png"}
+                        src={"https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI/video/poster.jpg"}
                     />
-                    <LazyLoad>
                         <VideoPlayer isPlaying={isPlaying} handlePlayButtonClick={handlePlayButtonClick} />
-                    </LazyLoad>
                     <div onClick={handlePlayButtonClick} className={`play-button ${isPlaying ? 'pause' : ''}`}></div>
                 </div>
             </div>

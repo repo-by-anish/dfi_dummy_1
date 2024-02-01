@@ -4,7 +4,6 @@ import { prodDataType } from "../../api/dummydata";
 import Button from "../basics/Button";
 import { useNavigate } from "react-router-dom";
 import { screenWidth, useData } from '../../api/fetctData';
-import { scrollToTop } from "../../api/scrollToTop";
 
 const ProductsSection = (): JSX.Element => {
     const [slide, setSlide] = useState<string>("exotic");
@@ -40,7 +39,6 @@ const ProductsSection = (): JSX.Element => {
     }, [index]);
 
     const renderToAllProducts = () => {
-        scrollToTop();
         navigate("/products"); // navigate to "/products";
     };
 
