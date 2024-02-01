@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Jura:wght@300;500;700&family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  --font-nunito: 'Nunito', sans-serif;
+  --font-jura: 'Jura', sans-serif;
+  --font-itim: 'Itim', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  --primary-color1: #001A00;
+  --primary-color2: #00401e82;
+  --primary-color: #00401E;
+  --primary-color3: #1C5A1C;
+  --primary-color35: #1c5a1c84;
+  --secondary-color3: #FFF000;
+  --secondary-color31: #d3cd8180;
+  --back-color-1: #EDEFF3;
+  --tertiary-color: #FFFFFF;
+  --quaternary-color: #333333;
+  --quaternary-color50: #3333337f;
+  --quaternary-color25: #33333340;
+  --dp-bg-color: #FDFFFF;
+}
+
+.all_product_visual {
+  height: 100%;
+  padding-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 87px;
+  background: var(--back-color-1);
+}
+
+.products__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--back-color-1);
+}
+
+
+/* Redirector page */
+
+.product_redirect_page {
+  padding: 4rem 0 0 0;
+}
+
+.pr_main {
+  max-height: 650px;
+  display: flex;
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.prm_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.prm_right {
+  width: 60%;
+}
+
+
+.prm_action {
+  display: flex;
+  width: calc(100% - 2rem);
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 2px solid var(--primary-color35);
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price span {
+  font-size: 12px;
+  color: var(--quaternary-color50);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.price h1 {
+  font-size: 40px;
+  color: var(--quaternary-color);
+  font-weight: 600;
+}
+
+
+.prm_headings p {
+  font-size: 12px;
+  color: var(--quaternary-color50);
+  font-weight: 400;
+}
+
+.prm_headings h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.prm_spc_table {
+  border: 2px solid var(--primary-color35);
+  width: 90%;
+  margin: 30px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.prm_spc_table table {
+  border-collapse: collapse;
+  font-family: var(--font-nunito);
+  font-size: 17px;
+  width: 100%;
+}
+
+.table_body {
+  background-color: #f9f9f9;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 12px 25px;
+  text-align: left;
+}
+
+td:first-child {
+  font-weight: 600;
+  background-color: #00000024;
+  color: var(--primary-color);
+}
+
+td:last-child {
+  width: 70%;
+  color: var(--primary-color2);
+  background-color: #f2f2f2;
+}
+
+.prm_prd_about {
+  background-color: var(--primary-color35);
+  height: calc(160px - 4rem);
+  width: calc(90% - 4rem);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.prm_prd_about p {
+  font-family: var(--font-nunito);
+  font-size: 17px;
+  color: var(--primary-color);
+}
+
+.pr_similarproducts {
+  background-color: var(--primary-color35);
+}
+
+.pr_similarproducts_title {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--primary-color1);
+  padding: 2rem 0 0 2rem;
+}
+
+.sim_products {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .product_redirect_page {
+    padding: 2rem 0 0 0;
+  }
+  
+  .pr_main {
+    max-height: 100%;
+    display: inline;
+  }
+
+  .prm_headings h1 {
+    font-size: 30px;
+  }
+  
+  .price h1 {
+    font-size: 30px;
+  }
+  .prm_left {
+    width: 100%;
+  }
+  
+  .prm_right {
+    width: 100%;
+  }
+
+  .prm_spc_table{
+    width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+
+  td {
+    padding: 8px 15px;
+  }
+  
+  td:first-child {
+    font-weight: 600;
+    background-color: #00000024;
+    color: var(--primary-color);
+  }
+  
+  td:last-child {
+    width: 50%;
+  }
+
+  .prm_prd_about{
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .sim_products{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .pr_similarproducts_title{
+    padding: 0;
+    text-align: center;
+  }
+
+  .prm_prd_about {
+    height: 100%;
+  }
+}
+
+/* Redirector page */
