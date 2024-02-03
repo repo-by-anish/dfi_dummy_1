@@ -255,21 +255,16 @@ header {
 
 /* Advertisement Section */
 
-.advertisement-container {
-    padding: 1rem 3rem;
-    overflow: hidden;
-}
-
 .advertisement {
+    display: flex;
     background-color: var(--primary-color35);
 }
 
-.advertisement-video {
-    width: 800px;
-    height: 500px;
-    object-fit: cover;
+.adv_video img {
+    margin: 2rem;
     border-radius: 10px;
 }
+
 
 .play-button {
     position: absolute;
@@ -291,16 +286,6 @@ header {
     font-size: 2em;
 }
 
-.popup {
-    position: relative;
-    width: fit-content;
-}
-
-.advertisement {
-    display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    place-items: center;
-}
 
 .adv_quote {
     font-family: var(--font-jura);
@@ -309,6 +294,9 @@ header {
     color: var(--quaternary-color);
     margin-inline: 0;
     margin-bottom: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 
 .adv_quote h1 {

@@ -10,16 +10,8 @@ const Advertisement = (): JSX.Element => {
 
     return (
         <section className='advertisement'>
-            <div className="advertisement-container">
-                <div className="popup">
-                    <img
-                        className="advertisement-video"
-                        alt='poster Img'
-                        src={"https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI/video/poster.jpg"}
-                    />
-                        {/* <VideoPlayer isPlaying={isPlaying} handlePlayButtonClick={handlePlayButtonClick} /> */}
-                    <div onClick={handlePlayButtonClick} className={`play-button ${isPlaying ? 'pause' : ''}`}></div>
-                </div>
+            <div className="adv_video">
+                <img onClick={handlePlayButtonClick} width={700} src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@5ad27dc969c7782fc30c67b7d3ebc13b99281871/video/poster.jpg" alt="" />
             </div>
             <div className="adv_quote">
                 <h1>Empower Your Growth</h1>
