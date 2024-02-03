@@ -14,8 +14,7 @@ const Advertisement = (): JSX.Element => {
                 <div className="popup">
                     <img
                         className="advertisement-video"
-                        alt=''
-                        style={{ visibility: isPlaying ? 'hidden' : 'visible' }}
+                        alt='poster Img'
                         src={"https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI/video/poster.jpg"}
                     />
                         {/* <VideoPlayer isPlaying={isPlaying} handlePlayButtonClick={handlePlayButtonClick} /> */}
