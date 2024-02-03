@@ -247,6 +247,10 @@ header {
     height: 100%;
     margin-top: 2rem;
 }
+.products_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 
 /* Advertisement Section */

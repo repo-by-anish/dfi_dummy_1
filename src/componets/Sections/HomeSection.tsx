@@ -1,4 +1,3 @@
-import { CircularProgress } from "@mui/material";
 import { motion, useScroll } from "framer-motion";
 import { useData } from "../../api/fetctData";
 import HeroSection from "./HeroSection";
@@ -17,7 +16,7 @@ const HomeSection = (): JSX.Element => {
     let content;
 
     if (isLoading) {
-        content = <CircularProgress color="secondary" size={50} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />;
+        content = <p>Loading...</p>;
     } else {
         content = (
             <main className="overflow_x">

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import VideoPlayer from '../basics/VideoPlayer';
+// import VideoPlayer from '../basics/VideoPlayer';
 
 const Advertisement = (): JSX.Element => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -18,7 +18,7 @@ const Advertisement = (): JSX.Element => {
                         style={{ visibility: isPlaying ? 'hidden' : 'visible' }}
                         src={"https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI/video/poster.jpg"}
                     />
-                        <VideoPlayer isPlaying={isPlaying} handlePlayButtonClick={handlePlayButtonClick} />
+                        {/* <VideoPlayer isPlaying={isPlaying} handlePlayButtonClick={handlePlayButtonClick} /> */}
                     <div onClick={handlePlayButtonClick} className={`play-button ${isPlaying ? 'pause' : ''}`}></div>
                 </div>
             </div>

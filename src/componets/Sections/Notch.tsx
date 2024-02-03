@@ -10,10 +10,10 @@ const Notch = (): JSX.Element => {
                 location.pathname !== "/" &&
                 (<>
                     <div onClick={() => navigate(-1)} style={{ cursor: "pointer" }} title="Back" className="icon">
-                        <img src="/basic_icon/back.svg" alt="" />
+                        <img src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@ca5bb668a0c6f801176036abbca028903bdde45b/icons/basic_icon/back.svg" alt="" />
                     </div>
                     <div onClick={() => navigate("/")} style={{ cursor: "pointer" }} title="Go Home" className="icon">
-                        <img src="/basic_icon/home.svg" alt="" />
+                        <img src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@ca5bb668a0c6f801176036abbca028903bdde45b/icons/basic_icon/home.svg" alt="" />
                     </div>
                 </>
                 )
@@ -27,7 +27,7 @@ const Notch = (): JSX.Element => {
                 </select>
             </div>
             <button className="screen_mode icon">
-                <img style={{ width: "20px", height: "20px" }} src="/icons/moon.svg" alt="" />
+                <img style={{ width: "20px", height: "20px" }} src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@5ad27dc969c7782fc30c67b7d3ebc13b99281871/icons/icons/moon.svg" alt="" />
             </button>
         </div>
     );

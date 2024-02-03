@@ -15,7 +15,7 @@ const HeroSection = () => {
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <img
                             style={{ borderRadius: "50%" }}
-                            src="icons/brand_icon/dfi_logo.jpg"
+                            src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@5ad27dc969c7782fc30c67b7d3ebc13b99281871/icons/icons/brand_icon/dfi_logo.avif"
                             height={screenWidth <= 500 ? "30px" : "60px"}
                             width={screenWidth <= 500 ? "30px" : "60px"}
                             alt=""
