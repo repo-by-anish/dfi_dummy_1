@@ -9,15 +9,15 @@ const Footer = () => {
                             <h2 className="fc_title">Address-</h2>
                             <div className="fc__content">
                                 <div className="fc_content_details">
-                                    <p>XT Exports</p>
-                                    <p>123 Main Street</p>
-                                    <p>Cityville</p>
-                                    <p>Stateville, ST</p>
-                                    <p>12345</p>
-                                    <p>United States</p>
+                                    <p>DFI</p>
+                                    <p>A-12 APMC Marcket Yard</p>
+                                    <p>Singena Agrahara</p>
+                                    <p>Bangalore, Karnataka</p>
+                                    <p>560100</p>
+                                    <p>India</p>
                                 </div>
                                 <div className="contact-number">
-                                    <p>+91-000000 0000</p>
+                                    <p>+91-83439 86546</p>
                                 </div>
                             </div>
                         </div>

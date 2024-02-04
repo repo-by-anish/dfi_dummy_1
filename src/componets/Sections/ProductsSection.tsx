@@ -44,7 +44,7 @@ const ProductsSection = (): JSX.Element => {
 
     useEffect(() => {
         if (slide === "exotic") {
-            setProdToRender(products?.filter((_, index: number) => index < 8));
+            setProdToRender(products?.filter((_, index: number) => index < 6));
         } else {
             const prodToRenderFiltered = products.filter((product: prodDataType) => product.prod_type.indexOf(slide) > -1);
             setProdToRender(prodToRenderFiltered);

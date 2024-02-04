@@ -1,4 +1,4 @@
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useData } from "../../api/fetctData";
 import HeroSection from "./HeroSection";
 import ProductsSection from "./ProductsSection";
@@ -11,7 +11,6 @@ import useTitle from "../../api/useTitle";
 const HomeSection = (): JSX.Element => {
     useTitle("Diamond Fruits International");
     const { isLoading } = useData();
-    const { scrollYProgress } = useScroll();
 
     let content;
 
@@ -19,15 +18,7 @@ const HomeSection = (): JSX.Element => {
         content = <p>Loading...</p>;
     } else {
         content = (
-            <main className="overflow_x">
-                <motion.div
-                    style={{ scaleX: scrollYProgress, backgroundColor: 'var(--primary-color)', height: '5px', position: 'sticky', top: 0, left: 0, transformOrigin: '0%', zIndex: 10, borderRadius: '0 0 5px 0' }}
-                    viewport={{ once: true }}
-                    className="progress-bar"
-                    initial={{ scaleX: 0 }}
-                    animate={{ scaleX: 1 }}
-                    transition={{ duration: 0.5 }}
-                ></motion.div>
+            <main className="overflow_x mt_40">
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -36,10 +27,17 @@ const HomeSection = (): JSX.Element => {
                 >
                     <HeroSection />
                 </motion.div>
-                <ProductsSection />
 
                 <motion.div
-                    initial={{ y: -350, opacity: 0 }}
+                    initial={{ x: +350, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2, type: "spring" }}
+                    viewport={{ once: true }}
+                >
+                    <ProductsSection />
+                </motion.div>
+                <motion.div
+                    initial={{ y: 350, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 2, type: "spring" }}
                     viewport={{ once: true }}
@@ -48,7 +46,7 @@ const HomeSection = (): JSX.Element => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ x: +350, opacity: 0 }}
+                    initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2, type: "spring" }}
                     viewport={{ once: true }}
@@ -56,7 +54,7 @@ const HomeSection = (): JSX.Element => {
                     <Partners />
                 </motion.div>
                 <motion.div
-                    initial={{ x: -350, opacity: 0 }}
+                    initial={{ x: +350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2, type: "spring" }}
                     viewport={{ once: true }}
@@ -64,8 +62,8 @@ const HomeSection = (): JSX.Element => {
                     <Testimonials />
                 </motion.div>
                 <motion.div
-                    initial={{ y: +350, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ x: -350, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2, type: "spring" }}
                     viewport={{ once: true }}
                 >

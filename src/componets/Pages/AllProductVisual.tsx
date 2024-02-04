@@ -9,7 +9,7 @@ const AllProductVisual = (): JSX.Element => {
     const location = useLocation();
     
     return (
-        <section>
+        <section className="mt_40">
             <div className="products__header">
                 <p className="path">{location.pathname}</p>
                 <h1>All Products</h1>

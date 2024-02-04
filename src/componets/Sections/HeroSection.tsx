@@ -4,8 +4,7 @@ import { screenWidth } from "../../api/fetctData";
 
 const HeroSection = () => {
     const onContactClick = () => {
-        // redirect to external link
-        window.location.href = "//api.whatsapp.com/send?phone=916206573987";
+        window.location.href = "//api.whatsapp.com/send?phone=918343986546";
     };
 
     return (

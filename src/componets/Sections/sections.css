@@ -38,6 +38,12 @@ a {
     border-bottom: 2px solid var(--primary-color35);
 }
 
+.notch_container {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
 
 
 .language {
@@ -53,7 +59,7 @@ select {
     outline: none;
 }
 
-.icon{
+.icon {
     width: 35px;
     height: 35px;
     background-color: var(--tertiary-color);
@@ -69,6 +75,10 @@ select {
 /* .screen_mode {
 
 } */
+
+.mt_40 {
+    padding-top: 40px;
+}
 
 .hero {
     width: 100%;
@@ -247,26 +257,82 @@ header {
     height: 100%;
     margin-top: 2rem;
 }
-.products_container{
+
+.products_container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 0 2rem 2rem;
 }
 
 
 /* Advertisement Section */
 
 .advertisement {
+    min-height: 550px;
+    position: relative;
+}
+
+.adv_container {
     display: flex;
     background-color: var(--primary-color35);
 }
 
-.adv_video img {
+.adv_video {
+    position: relative;
+}
+
+.adv_video_poster {
     margin: 2rem;
     border-radius: 10px;
 }
 
+.play_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-.play-button {
+/* Video Player */
+
+/* Video Player */
+.ad_video::after {
+    content: "Hiiiiiiiiiiiiiiiiiiiiiiiiiii";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1C5A1C;
+    font-size: 30px;
+    z-index: 70;
+}
+
+.video_player {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 9;
+}
+
+.play_icon:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+.close_button {
+    position: fixed;
+    right: 130px;
+    top: 60px;
+    z-index: 800;
+    cursor: pointer;
+    top: 15%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+}
+
+.play_button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -279,11 +345,14 @@ header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 2;
 }
 
-.play-button::after {
+.play_button::after {
     content: '\25B6';
     font-size: 2em;
+    background: #000;
+    height: 22px;
 }
 
 
@@ -375,9 +444,8 @@ header {
 
 .ps__bg {
     left: 0;
-    min-width: 100%;
+    width: 100%;
     opacity: 0.5;
-    height: 810px;
 }
 
 .psc__quote {
@@ -474,7 +542,7 @@ header {
     height: 500px;
 }
 
-.blog_slider{
+.blog_slider {
     /* height: 350px; */
     margin: 2rem auto;
     width: 75%;
@@ -614,7 +682,7 @@ header {
         padding: 0 30px;
         background-size: cover;
         height: 300px;
-        width: calc( 100vw - 60px);
+        width: calc(100vw - 60px);
     }
 
     .hero__content-1 nav {
@@ -636,49 +704,52 @@ header {
         margin-block-start: 0;
     }
 
-    .product__slider h2{
+    .product__slider h2 {
         padding: 0.8rem;
         font-size: 20px;
     }
 
-    .products__content{
+    .products_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products__content {
         padding-bottom: 3rem;
     }
 
-    .products__button{
+    .products__button {
         bottom: 30px;
     }
 
-    .slider{
+    .slider {
         height: 40px;
     }
 
-    .slide{
+    .slide {
         font-size: 12px;
         height: 36px;
         padding: 4px;
     }
-    .products{
-        width: 96%;
-        margin-top: 0;
-    }
-
-    .advertisement-video {
-        width: 300px;
-        height: 200px;
-    }
-
 
     .advertisement {
         display: block;
         text-align: center;
+        min-height: 400px;
     }
 
-    .advertisement-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 0;
+    .close_button {
+        position: fixed;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .adv_container {
+        flex-direction: column;
+    }
+
+    .adv_video_poster {
+        margin: 1rem;
     }
 
     .adv_quote h1 {
@@ -705,6 +776,7 @@ header {
     .partners-section__content :first-child {
         font-size: 40px;
     }
+
     .overflow_x {
         overflow-x: hidden;
     }
@@ -731,7 +803,7 @@ header {
     }
 
     .ps__bg {
-        height: 900px;
+        width: 100%;
     }
 
     .psc__quote {
@@ -816,3 +888,22 @@ header {
 }
 
 /* Media query */
+
+
+@media screen and (max-width: 840px) {
+    .ps__bg{
+        height: 100%;
+    }
+    .products_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .close_button{
+        top: 20%;
+        left: 79%;
+        transform: translate(-50%, -50%);
+    }
+
+    .adv_container{
+        flex-direction: column;
+    }
+}
