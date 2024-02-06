@@ -38,8 +38,8 @@ const HomeSection = (): JSX.Element => {
                     <ProductsSection />
                 </motion.div>
                 <motion.div
-                    initial={{ y: 350, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ x: 350, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2, type: "spring" }}
                     viewport={{ once: true }}
                 >
