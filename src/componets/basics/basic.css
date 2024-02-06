@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Jura:wght@300;500;700&family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
-    --font-nunito: 'nunito', sans-serif;
-    --font-jura: 'Jura', sans-serif;
-    --font-itim: 'Itim', sans-serif;
-    --font-ubuntu: 'Ubuntu', sans-serif;
+    /* --font-nunito: 'nunito', sans-serif;
+    /* --font-jura: 'Jura', sans-serif; */
+    --heading-font: 'Ubuntu', sans-serif;
+    /* --font-itim: 'Itim', sans-serif; */
+    --text-font: 'Fredoka', sans-serif;
     --primary-color1: #001A00;
     --primary-color: #00401E;
     --primary-color2: rgba(0, 64, 30, 0.511);
@@ -38,13 +39,13 @@ a {
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-jura);
+    font-family: var(--text-font);
 }
 
 .button__primary {
-    font-family: var(--font-nunito);
+    font-family: var(--heading-font);
     border-radius: 3px;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem auto;
     position: relative;
     border: none;
     cursor: pointer;
@@ -114,12 +115,12 @@ body {
     text-align: center;
 }
 
-.product__card div{
+.product__card div {
     transform: translateY(-25px);
 }
 
 
-.product__img{
+.product__img {
     position: relative;
     display: inline-block;
 }
@@ -128,12 +129,14 @@ body {
 
 .product__info h2 {
     font-size: 23px;
+    font-family: var(--heading-font);
     font-weight: 600;
     color: var(--primary-color1);
 }
 
 .product__description {
     font-size: 15px;
+    font-family: var(--text-font);
 }
 
 .product__price {
@@ -147,6 +150,7 @@ body {
     opacity: 0;
     bottom: 0;
     transition: all 0.4s;
+    font-family: var(--heading-font);
 }
 
 .product__card__container:hover>.product__price {
@@ -154,6 +158,16 @@ body {
 }
 
 .prd_prc_r {
+    text-align: center;
+}
+
+.my_slider{
+    /* min-height: 400px; */
+    /* margin: 0 auto; */
+    margin-bottom: 60px;
+}
+
+.slick-active :first-child{
     text-align: center;
 }
 
@@ -179,7 +193,7 @@ body {
         margin-left: 0.5rem;
     }
 
-    .product__card div{
+    .product__card div {
         transform: translateY(-15px);
     }
 
@@ -205,12 +219,14 @@ body {
         font-size: 12px;
     }
 }
-@media screen and (max-width: 600px) {
-    body{
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    body {
         overflow-x: hidden;
         display: block;
         width: 100%;
     }
+
     .button__primary {
         padding: 0.35rem 0.8rem;
     }
@@ -230,10 +246,6 @@ body {
         margin-left: 0.5rem;
     }
 
-    /* .product__card div{
-        transform: translateY(-15px);
-    } */
-
     .button__primary::before,
     .button__primary::after {
         display: none;
@@ -241,7 +253,7 @@ body {
 
     .product__price {
         height: 40px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
 
     .product__card__container:hover {
@@ -254,5 +266,49 @@ body {
 
     .product__description {
         font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .prd_prc_l span {
+        font-size: 12px;
+    }
+
+    .product__card__container {
+        width: 150px;
+        height: 120px;
+        border-radius: 5px;
+        margin-left: 0.5rem;
+    }
+
+    .button__primary::before,
+    .button__primary::after {
+        display: none;
+    }
+
+    .product__price {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .product__card__container:hover {
+        height: 160px;
+    }
+
+    .product__info h2 {
+        font-size: 15px;
+    }
+
+    .product__description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    .product__card__container {
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+        margin-left: 0.5rem;
     }
 }

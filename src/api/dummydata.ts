@@ -20,6 +20,12 @@ export interface prodDataType{
     prod_type: string[]
 }
 
+export interface brandLogoType{
+    id: number,
+    logo_url: string,
+    name: string
+}
+
 
 export interface blogType{
     id: number,

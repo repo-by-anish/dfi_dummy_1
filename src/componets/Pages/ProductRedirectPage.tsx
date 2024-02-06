@@ -30,7 +30,7 @@ const ProductRedirectPage = (): JSX.Element => {
     const SimilarProducts = shuffledProducts.filter((product) => product.prod_id !== Number(id)).slice(0, 4);
 
     return (
-        <div className="product_redirect_page mt_40">
+        <div className="product_redirect_page mt-160">
             <div className="pr_main">
                 <div className="prm_left">
                     <div className="prm_img">

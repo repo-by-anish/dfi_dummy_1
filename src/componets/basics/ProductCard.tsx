@@ -27,7 +27,7 @@ const ProductCard = ({ prod_id, prod_name, prod_desc, prod_img, prod_price, prod
           <div className="product__img">
             <LazyLoad>
               <img
-                width={screenWidth>=600?160:100}
+                width={screenWidth>=600?screenWidth>=900?160:120:100}
                 src={prod_img[0]}
                 alt="Product Poster"
                 className="product__poster"

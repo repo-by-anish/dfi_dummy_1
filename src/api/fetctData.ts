@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { prodDataType, blogType } from "./dummydata";
+import { prodDataType, blogType, brandLogoType } from "./dummydata";
 
-const url = "https://cdn.jsdelivr.net/gh/repo-by-anish/data_for_DFI@74ddefa4b17bb5e2c5ffd210f3e49884f539581d/db.json";
+const url = "https://cdn.jsdelivr.net/gh/repo-by-anish/data_for_DFI@40213db78133358d8f9f8792a5ee4c9c2007339b/db.json";
 
 export const fetchData = async (url: string) => {
   try {
@@ -16,7 +16,8 @@ export const fetchData = async (url: string) => {
 
 export function useData() {
   const [products, setProducts] = useState<prodDataType[]>([]);
-  const [blogs, setBlogs] = useState<blogType[]>([]); // Fix type here
+  const [blogs, setBlogs] = useState<blogType[]>([]);
+  const [brandLogos, setBrandLogos] = useState<brandLogoType[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -25,18 +26,17 @@ export function useData() {
         setIsLoading(true);
         const data = await fetchData(url);
         setProducts(data.dummyData);
-        
         setBlogs(data.blogs);
+        setBrandLogos(data.brandProductAssets);
       } catch (error) {
         console.error(error);
       } finally {
         setIsLoading(false);
       }
     };
-
     fetchDataFromApi();
   }, []);
-  return { products, blogs, isLoading };
+  return { products, blogs, isLoading, brandLogos };
 }
 
 

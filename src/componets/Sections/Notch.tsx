@@ -1,9 +1,7 @@
-import { motion, useScroll } from "framer-motion";
+
 import { useLocation, useNavigate } from "react-router-dom";
 const Notch = (): JSX.Element => {
     const location = useLocation();
-    const { scrollYProgress } = useScroll();
-
     const navigate = useNavigate();
 
     return (
@@ -33,14 +31,6 @@ const Notch = (): JSX.Element => {
                     <img style={{ width: "20px", height: "20px" }} src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@5ad27dc969c7782fc30c67b7d3ebc13b99281871/icons/icons/moon.svg" alt="" />
                 </button>
             </div>
-            <motion.div
-                style={{ scaleX: scrollYProgress, backgroundColor: 'var(--primary-color)', height: '5px', position: 'sticky', top: 0, left: 0, transformOrigin: '0%', zIndex: 10, borderRadius: '0 0 5px 0' }}
-                viewport={{ once: true }}
-                className="progress-bar"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 0.5 }}
-            ></motion.div>
         </div>
     );
 };

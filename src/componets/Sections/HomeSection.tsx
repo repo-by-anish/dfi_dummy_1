@@ -7,6 +7,7 @@ import Partners from "./Partners";
 import Testimonials from "./Testmonials";
 import BlogSlider from "./BlogSlider";
 import useTitle from "../../api/useTitle";
+import BrandsProductsLogo from "./BrandsProductsLogo";
 
 const HomeSection = (): JSX.Element => {
     useTitle("Diamond Fruits International");
@@ -18,7 +19,7 @@ const HomeSection = (): JSX.Element => {
         content = <p>Loading...</p>;
     } else {
         content = (
-            <main className="overflow_x mt_40">
+            <main className="overflow_x mt-160">
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -44,7 +45,14 @@ const HomeSection = (): JSX.Element => {
                 >
                     <Advertisement />
                 </motion.div>
-
+                <motion.div
+                    initial={{ x: -350, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2, type: "spring" }}
+                    viewport={{ once: true }}
+                >
+                    <BrandsProductsLogo />
+                </motion.div>
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
