@@ -12,6 +12,10 @@ const ProductRedirectPage = (): JSX.Element => {
     const { products } = useData();
     const product = products.find((product) => product.prod_id === Number(id));
     useTitle(`${product?.prod_name}`);
+
+    const onContactClick = () => {
+        window.location.href = "//api.whatsapp.com/send?phone=918343986546&text=Hello%20DFI!%20\nlets%20have%20a%20conversation%20for%20product%20enquiry%20for%20" + product?.prod_name;
+    };
     
 
     const shuffleArray = (products: prodDataType[]) => {
@@ -47,7 +51,7 @@ const ProductRedirectPage = (): JSX.Element => {
                             <h1>{product?.prod_price}</h1>
                             <span>{product?.prod_size}</span>
                         </div>
-                        <div className="action_button">
+                        <div onClick={onContactClick} className="action_button">
                             <Button name="Make an Order" size={{ width: screenWidth>600?300:200, height: screenWidth>600?50:35 }} color="#fff" backgroundColor="var(--primary-color)" fontSize="22px" />
                         </div>
                     </div>

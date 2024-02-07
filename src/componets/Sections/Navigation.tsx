@@ -9,7 +9,7 @@ const Navigation = (): JSX.Element => {
             <div className="brand__logo">
                 <img
                     src="./brand_img.jpg"
-                    height={screenWidth <= 500 ? "100px" : "120px"}
+                    height={screenWidth <= 500 ? "100px" : "110px"}
                     // width={screenWidth <= 500 ? "30px" : "60px"}
                     alt=""
                 />

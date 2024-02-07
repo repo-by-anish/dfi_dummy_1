@@ -16,8 +16,9 @@ export interface prodDataType{
     prod_price: number,
     prod_size: string,
     prod_specification:FruitSpecification,
-    prod_about: string;
-    prod_type: string[]
+    prod_about: string,
+    prod_type: string[],
+    prod_width?: number
 }
 
 export interface brandLogoType{

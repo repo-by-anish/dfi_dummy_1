@@ -11,7 +11,7 @@ const HeroSection = () => {
         <section className="hero">
             <div className="hero__content-1">
                 <blockquote className="hero__quote">
-                    Welcome to <b>Diamond <span style={{ color: "var(--secondary-color3)" }}>Fruits</span> International</b>, your <b>B2B</b> destination for top-notch fruit import and export services. Explore efficient and <b>cost-effective global trade</b> with us!
+                    Welcome to <b><span style={{ color: "var(--secondary-color50)", fontWeight: "bold" }}>D</span>iamond <span style={{ color: "var(--secondary-color50)", fontWeight: "bold" }}>F</span>ruits <span style={{ color: "var(--secondary-color50)", fontWeight: "bold" }}>I</span>nternational</b>, your <b>B2B</b> destination for top-notch fruit import and export services. Explore efficient and <b>cost-effective global trade</b> with us!
                 </blockquote>
                 <div onClick={onContactClick} className="hero__btn">
                     <Button

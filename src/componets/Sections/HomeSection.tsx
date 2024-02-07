@@ -8,11 +8,40 @@ import Testimonials from "./Testmonials";
 import BlogSlider from "./BlogSlider";
 import useTitle from "../../api/useTitle";
 import BrandsProductsLogo from "./BrandsProductsLogo";
+// import { useState } from "react";
+import ScrollToTop from "../basics/ScrollToTop";
 
 const HomeSection = (): JSX.Element => {
     useTitle("Diamond Fruits International");
     const { isLoading } = useData();
 
+
+    // const ScrollButton = () => {
+
+    //     const [visible, setVisible] = useState(false)
+
+    //     const toggleVisible = () => {
+    //         const scrolled = document.documentElement.scrollTop;
+    //         if (scrolled > 300) {
+    //             setVisible(true)
+    //         }
+    //         else if (scrolled <= 300) {
+    //             setVisible(false)
+    //         }
+    //     };
+
+    //     const scrollToTop = () => {
+    //         window.scrollTo({
+    //             top: 0,
+    //             behavior: 'smooth'
+    //             /* you can also use 'auto' behaviour 
+    //                in place of 'smooth' */
+    //         });
+    //     };
+
+    //     window.addEventListener('scroll', toggleVisible);
+
+    // }
     let content;
 
     if (isLoading) {
@@ -77,6 +106,7 @@ const HomeSection = (): JSX.Element => {
                 >
                     <BlogSlider />
                 </motion.div>
+                <ScrollToTop />
             </main>
         );
     }

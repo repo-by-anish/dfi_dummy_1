@@ -21,6 +21,13 @@
     --dp-bg-color: #FDFFFF;
 }
 
+.hilight{
+    color: var(--secondary-color50);
+    font-weight: 500;
+    font-family: var(--heading-font);
+    font-size: 30px;
+}
+
 a {
     text-decoration: none;
 }
