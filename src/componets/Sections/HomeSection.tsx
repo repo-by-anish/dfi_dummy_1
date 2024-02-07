@@ -9,7 +9,7 @@ import BlogSlider from "./BlogSlider";
 import useTitle from "../../api/useTitle";
 import BrandsProductsLogo from "./BrandsProductsLogo";
 // import { useState } from "react";
-import ScrollToTop from "../basics/ScrollToTop";
+// import ScrollToTop from "../basics/ScrollToTop";
 
 const HomeSection = (): JSX.Element => {
     useTitle("Diamond Fruits International");
@@ -106,7 +106,7 @@ const HomeSection = (): JSX.Element => {
                 >
                     <BlogSlider />
                 </motion.div>
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
             </main>
         );
     }
