@@ -6,11 +6,16 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color:transparent;
 }
-
+html {scroll-behavior: smooth;}
 body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: var(--font-signika);
+}
+
+.overflow_x{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
