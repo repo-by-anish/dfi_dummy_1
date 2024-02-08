@@ -53,7 +53,7 @@ const Advertisement = (): JSX.Element => {
         <section className="advertisement">
             {videoPlaying &&
                 <div className="close_button">
-                    <img height={screenWidth<=600?40:screenWidth<=900?50:70} onClick={handlePauseButtonClick} src="./close.svg" alt="Close Icon" />
+                    <img height={screenWidth<=600?40:screenWidth<=900?50:70} onClick={handlePauseButtonClick} src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@b94e5c0ac0f7240ed2616a50e66718993e713d7c/icons/basic_icon/close.svg" alt="Close Icon" />
                 </div>}
             <div className="adv_container">
                 <div className="adv_video">

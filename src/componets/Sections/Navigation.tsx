@@ -8,7 +8,7 @@ const Navigation = (): JSX.Element => {
         <header className={open ? "header_active" : "header_inactive"}>
             <div className="brand__logo">
                 <img
-                    src="./brand_img.jpg"
+                    src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@b94e5c0ac0f7240ed2616a50e66718993e713d7c/icons/brand_img.jpg"
                     height={screenWidth <= 500 ? "100px" : "110px"}
                     alt="Bradnd Logo"
                 />
