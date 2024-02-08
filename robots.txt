@@ -1,0 +1,8 @@
+# Robots.txt file for diamondfruitsinternational.com
+
+# Allow crawling of all content
+User-agent: *
+Disallow:
+
+# Specify the location of your sitemap.xml file
+Sitemap: https://diamondfruitsinternational.com/sitemap.xml

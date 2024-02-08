@@ -10,7 +10,6 @@ import Notch from './componets/Sections/Notch';
 import Navigation from './componets/Sections/Navigation';
 import Scroller from './componets/basics/Scroller';
 import Progressbar from './componets/basics/Progressbar';
-
 function App() {
   return (
     <>

@@ -155,7 +155,9 @@ header {
         margin-right: 1rem;
         margin-top: 1rem;
     }
-
+    header{
+        padding: 0;
+    }
     .nav__links {
         flex-direction: column;
         align-items: start!important;
@@ -931,6 +933,7 @@ header {
 
     .adv_video_poster {
         margin: 1rem;
+        width: 300px;
     }
 
     .adv_quote h1 {

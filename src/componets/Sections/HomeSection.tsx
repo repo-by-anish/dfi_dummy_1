@@ -22,60 +22,60 @@ const HomeSection = (): JSX.Element => {
         content = <p>Loading...</p>;
     } else {
         content = (
-            <main className="overflow_x mt-140">
+            <main className="mt-140">
                 <motion.div
-                    initial={{ x: -350, opacity: 0 }}
+                    initial={{ x: -200, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <HeroSection />
                 </motion.div>
 
                 <motion.div
-                    initial={{ x: +350, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    initial={{ y: 70, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <ProductsSection />
                 </motion.div>
                 <motion.div
-                    initial={{ x: 350, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    initial={{ y: 70, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <Advertisement />
                 </motion.div>
                 <motion.div
-                    initial={{ x: -350, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    initial={{ y: 70, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <BrandsProductsLogo />
                 </motion.div>
                 <motion.div
-                    initial={{ x: -350, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    initial={{ y: 70, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <Partners />
                 </motion.div>
                 <motion.div
-                    initial={{ x: +350, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    initial={{ y: 70, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <Testimonials />
                 </motion.div>
                 <motion.div
-                    initial={{ x: -350, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, type: "spring" }}
+                    initial={{ y: 70, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     <BlogSlider />

@@ -1,0 +1,15 @@
+{
+    "short_name": "Diamond Fruits International",
+    "name": "Diamond Fruits International (DFI) - Your trusted partner for importing and exporting fresh, organic fruits in India. We specialize in wholesale distribution of high-quality organic fruits and vegetables. Explore a wide range of organic offerings for your business needs.",
+    "icons": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@b94e5c0ac0f7240ed2616a50e66718993e713d7c/icons/icons/brand_icon/favicon.ico",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }

@@ -1,14 +1,15 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { screenWidth, useData } from "../../api/fetctData";
 import MySlider from "../basics/MySlider";
-
-const clickHandler = (id: number) => {
-  const url = `/blog/${id}`;
-  window.location.href = url;
-};
+import { useNavigate } from "react-router-dom";
 
 export default function BlogSlider() {
   const { blogs } = useData();
+  const navigate = useNavigate();
+  const clickHandler = (id: number) => {
+    const url = `/blog/${id}`;
+    navigate(url);
+  };
 
   const blogsCards=(blogs.map((blog) => (
     <Card
