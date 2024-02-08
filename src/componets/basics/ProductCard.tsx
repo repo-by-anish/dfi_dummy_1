@@ -21,7 +21,7 @@ const ProductCard = ({ prod_id, prod_name, prod_desc, prod_img, prod_price, prod
     content = <p>Loading...</p>;
   } else {
     content = (
-      <div className="product__card__container touch">
+      <div className="product__card__container">
         <div className="product__card">
           <div className="product__img">
             <LazyLoad>
