@@ -8,20 +8,13 @@ import ProductsLayOut from './componets/layouts/ProductsLayOut';
 import ProductRedirectPage from './componets/Pages/ProductRedirectPage';
 import Notch from './componets/Sections/Notch';
 import Navigation from './componets/Sections/Navigation';
-import { motion, useScroll } from 'framer-motion';
+import Scroller from './componets/basics/Scroller';
+import Progressbar from './componets/basics/Progressbar';
 
 function App() {
-  const { scrollYProgress } = useScroll();
   return (
     <>
-      <motion.div
-        style={{ scaleX: scrollYProgress, backgroundColor: 'var(--primary-color)', height: '10px', position: 'sticky', top: 0, left: 0, transformOrigin: '0%', zIndex: 12, borderRadius: '0 0 5px 0' }}
-        viewport={{ once: true }}
-        className="progress-bar"
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{ duration: 0.5 }}
-      ></motion.div>
+      <Progressbar />
       <Navigation />
       <Notch />
       <Routes>
@@ -34,6 +27,7 @@ function App() {
         </Route>
       </Routes>
       <Footer />
+      <Scroller />
     </>
   );
 }

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { prodDataType, blogType, brandLogoType } from "./dummydata";
 
-const url = "https://cdn.jsdelivr.net/gh/repo-by-anish/data_for_DFI@6e2a95df79e0237413ccc00c306d776d749c66e7/db.json";
+const url = "https://cdn.jsdelivr.net/gh/repo-by-anish/data_for_DFI@68e255f73ccafa57e04887e3c1bffd41a8cdcffd/db.json";
 
 export const fetchData = async (url: string) => {
   try {

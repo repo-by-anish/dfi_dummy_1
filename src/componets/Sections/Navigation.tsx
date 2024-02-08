@@ -10,20 +10,19 @@ const Navigation = (): JSX.Element => {
                 <img
                     src="./brand_img.jpg"
                     height={screenWidth <= 500 ? "100px" : "110px"}
-                    // width={screenWidth <= 500 ? "30px" : "60px"}
-                    alt=""
+                    alt="Bradnd Logo"
                 />
             </div>
             <nav>
                 <ul className="nav__links">
-                    <li onClick={handleClick} className="hamburger">
-                        <div className="sp-1"></div>
-                        <div className="sp-2"></div>
-                        <div className="sp-3"></div>
-                    </li>
-                    <li className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="/">Home</a></li>
-                    <li className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="/">About</a></li>
-                    <li className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="/">Contact</a></li>
+                    <div onClick={handleClick} className="hamburger">
+                        <div className={open ? "sp-1 rot45l" : "sp-1"}></div>
+                        <div style={{ display: open ? "none" : "block" }} className="sp-2"></div>
+                        <div className={open ? "sp-3 rot45r" : "sp-3"}></div>
+                    </div>
+                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="#">Home</a></li>
+                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="#about">About</a></li>
+                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

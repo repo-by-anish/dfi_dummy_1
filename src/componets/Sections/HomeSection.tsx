@@ -9,46 +9,20 @@ import BlogSlider from "./BlogSlider";
 import useTitle from "../../api/useTitle";
 import BrandsProductsLogo from "./BrandsProductsLogo";
 // import { useState } from "react";
-// import ScrollToTop from "../basics/ScrollToTop";
+
 
 const HomeSection = (): JSX.Element => {
     useTitle("Diamond Fruits International");
     const { isLoading } = useData();
 
-
-    // const ScrollButton = () => {
-
-    //     const [visible, setVisible] = useState(false)
-
-    //     const toggleVisible = () => {
-    //         const scrolled = document.documentElement.scrollTop;
-    //         if (scrolled > 300) {
-    //             setVisible(true)
-    //         }
-    //         else if (scrolled <= 300) {
-    //             setVisible(false)
-    //         }
-    //     };
-
-    //     const scrollToTop = () => {
-    //         window.scrollTo({
-    //             top: 0,
-    //             behavior: 'smooth'
-    //             /* you can also use 'auto' behaviour 
-    //                in place of 'smooth' */
-    //         });
-    //     };
-
-    //     window.addEventListener('scroll', toggleVisible);
-
-    // }
+    
     let content;
 
     if (isLoading) {
         content = <p>Loading...</p>;
     } else {
         content = (
-            <main className="overflow_x mt-160">
+            <main className="overflow_x mt-140">
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -61,7 +35,7 @@ const HomeSection = (): JSX.Element => {
                 <motion.div
                     initial={{ x: +350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2, type: "spring" }}
+                    transition={{ duration: 1.5, type: "spring" }}
                     viewport={{ once: true }}
                 >
                     <ProductsSection />
@@ -69,7 +43,7 @@ const HomeSection = (): JSX.Element => {
                 <motion.div
                     initial={{ x: 350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2, type: "spring" }}
+                    transition={{ duration: 1.5, type: "spring" }}
                     viewport={{ once: true }}
                 >
                     <Advertisement />
@@ -77,7 +51,7 @@ const HomeSection = (): JSX.Element => {
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2, type: "spring" }}
+                    transition={{ duration: 1.5, type: "spring" }}
                     viewport={{ once: true }}
                 >
                     <BrandsProductsLogo />
@@ -85,7 +59,7 @@ const HomeSection = (): JSX.Element => {
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2, type: "spring" }}
+                    transition={{ duration: 1.5, type: "spring" }}
                     viewport={{ once: true }}
                 >
                     <Partners />
@@ -93,7 +67,7 @@ const HomeSection = (): JSX.Element => {
                 <motion.div
                     initial={{ x: +350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2, type: "spring" }}
+                    transition={{ duration: 1.5, type: "spring" }}
                     viewport={{ once: true }}
                 >
                     <Testimonials />
@@ -101,12 +75,11 @@ const HomeSection = (): JSX.Element => {
                 <motion.div
                     initial={{ x: -350, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2, type: "spring" }}
+                    transition={{ duration: 1.5, type: "spring" }}
                     viewport={{ once: true }}
                 >
                     <BlogSlider />
                 </motion.div>
-                {/* <ScrollToTop /> */}
             </main>
         );
     }

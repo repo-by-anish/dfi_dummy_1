@@ -2,7 +2,7 @@ import Counter from "../basics/Counter";
 
 const Partners = () => {
     return (
-        <section className="partners-section">
+        <section id="about" className="partners-section">
             <h1 className="partners-section__title">Our Reach and Impact</h1>
             <div className="psc_main">
                 <div className="partners-section__content psc_1">

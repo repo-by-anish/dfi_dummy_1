@@ -181,6 +181,12 @@ td:last-child {
 }
 
 @media screen and (max-width: 600px) {
+  .mt-190{
+    margin-top: 144px;
+  }
+  .all_product_visual{
+    margin-top: 1rem;
+  }
   .product_redirect_page {
     padding: 2rem 0 0 0;
   }

@@ -47,7 +47,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="footer_content">
+                <div id="contact" className="footer_content">
                     <div className="fc_content">
                         <h2 className="fc_title">Contact Us-</h2>
                         <form className="footer_form" action="">
