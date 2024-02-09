@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { screenWidth, useData } from "../../api/fetctData";
 import LazyLoad from "react-lazy-load";
-import "./pages.css"
+// import "./pages.css"
 import Button from "../basics/Button";
 import { prodDataType } from "../../api/dummydata";
 import ProductCard from "../basics/ProductCard";
@@ -34,7 +34,7 @@ const ProductRedirectPage = (): JSX.Element => {
     const SimilarProducts = shuffledProducts.filter((product) => product.prod_id !== Number(id)).slice(0, 4);
 
     return (
-        <div className="product_redirect_page mt-160">
+        <div className="product_redirect_page mt-100">
             <div className="pr_main">
                 <div className="prm_left">
                     <div className="prm_img">

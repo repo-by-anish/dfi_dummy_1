@@ -1,4 +1,4 @@
-import "./sections.css";
+// import "./sections.css";
 import Button from "../basics/Button";
 import { screenWidth } from "../../api/fetctData";
 

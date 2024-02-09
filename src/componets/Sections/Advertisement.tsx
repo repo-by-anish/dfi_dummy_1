@@ -63,7 +63,7 @@ const Advertisement = (): JSX.Element => {
                 <div className="adv_quote">
                     <h1>Empower Your Growth</h1>
                     <p>
-                        Navigate Global Trade Seamlessly. Our export-import solutions break down barriers, offering open flexibility
+                        Navigate Global Trade Seamlessly. Our import solutions break down barriers, offering open flexibility
                         and limitless potential for your business.
                     </p>
                 </div>

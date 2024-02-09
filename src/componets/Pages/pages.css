@@ -180,6 +180,34 @@ td:last-child {
   justify-content: space-evenly;
 }
 
+
+.page_not_found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: var(--back-color-1);
+  color: var(--primary-color);
+}
+
+.page_not_found p{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primary-color1);
+}
+
+.page_not_found h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.mt-100{
+  margin-top: 100px;
+}
+
+
 @media screen and (max-width: 600px) {
   .mt-190{
     margin-top: 144px;

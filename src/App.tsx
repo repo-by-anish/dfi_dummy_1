@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Footer from './componets/Sections/Footer';
 import LayOut from './componets/layouts/LayOut';
 import { Routes, Route } from "react-router-dom"
@@ -10,6 +10,7 @@ import Notch from './componets/Sections/Notch';
 import Navigation from './componets/Sections/Navigation';
 import Scroller from './componets/basics/Scroller';
 import Progressbar from './componets/basics/Progressbar';
+import PageNotFound from './componets/Pages/PageNotFound';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
             <Route index element={<AllProductVisual />} />
             <Route path=":id" element={<ProductRedirectPage />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
       <Footer />

@@ -1,17 +1,19 @@
 
-export default function TestmonialItem() {
+ const TestmonialItem:React.FC<{TestmonialImg:string,TestmonialOwner:string,testmonialText:string}> =({TestmonialImg,TestmonialOwner,testmonialText})=> {
 
     return (
         <div className="testmonial_item">
             <div className="tm__main">
                 <div className="testm_dp_body">
-                    <img src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@master/dp_img.png" alt="" />
-                    <h3 className="tm_name">ABC Kumar</h3>
+                    <img src={TestmonialImg} alt="" />
+                    <h3 className="tm_name">{TestmonialOwner}</h3>
                 </div>
                 <blockquote>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ipsum iste sapiente numquam itaque ab? Veniam inventore, ea in aperiam voluptates deleniti necessitatibus aut adipisci totam reiciendis vero minima! Ex?
+                    {testmonialText}
                 </blockquote>
             </div>
         </div>
     )
 }
+
+export default TestmonialItem

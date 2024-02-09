@@ -1,4 +1,4 @@
-import "./basic.css";
+// import "./basic.css";
 const Button = ({size: {width, height}, color, backgroundColor, name, fontSize}:{size: {width: number, height: number}, color: string, backgroundColor: string, name: string, fontSize: string})=>{
 
     return(

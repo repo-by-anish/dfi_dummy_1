@@ -8,7 +8,6 @@ const Footer = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
         className="footer">
-            
             <div className="footer_container">
                 <div className="footer_content">
                     <div className="fc_left">
