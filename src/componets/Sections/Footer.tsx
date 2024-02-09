@@ -22,8 +22,6 @@ const Footer = () => {
                                     <p>Bangalore, Karnataka</p>
                                     <p>560100</p>
                                     <p>India</p>
-                                </div>
-                                <div className="contact-number">
                                     <p>+91-70015 02300</p>
                                 </div>
                             </div>
