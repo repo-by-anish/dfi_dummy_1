@@ -16,7 +16,7 @@ const Footer = () => {
                             <h2 className="fc_title">Address-</h2>
                             <div className="fc__content">
                                 <div className="fc_content_details">
-                                    <p>DFI</p>
+                                    <p>Diamond Fruit International</p>
                                     <p>A-12 APMC Marcket Yard</p>
                                     <p>Singena Agrahara</p>
                                     <p>Bangalore, Karnataka</p>
@@ -24,7 +24,7 @@ const Footer = () => {
                                     <p>India</p>
                                 </div>
                                 <div className="contact-number">
-                                    <p>+91-83439 86546</p>
+                                    <p>+91-70015 02300</p>
                                 </div>
                             </div>
                         </div>
@@ -42,13 +42,14 @@ const Footer = () => {
                     </div>
                     <div className="fc_right">
                         <div className="fc_content">
-                            <h2 className="fc_title">Quick Links-</h2>
+                            <h2 className="fc_title">Connect with-</h2>
                             <div className="fc__content">
                                 <div className="fc_content_details">
-                                    <p>About Us</p>
-                                    <p>Blogs</p>
-                                    <p>FAQ</p>
-                                    <p>Our Policy</p>
+                                    <p>Instagram</p>
+                                    <p>Facebook</p>
+                                    <p>LinkedIn</p>
+                                    <p>WhatsApp</p>
+                                    <p>Twitter</p>
                                 </div>
                             </div>
                         </div>

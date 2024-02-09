@@ -8,7 +8,6 @@ import Testimonials from "./Testmonials";
 import BlogSlider from "./BlogSlider";
 import useTitle from "../../api/useTitle";
 import BrandsProductsLogo from "./BrandsProductsLogo";
-// import { useState } from "react";
 
 
 const HomeSection = (): JSX.Element => {
