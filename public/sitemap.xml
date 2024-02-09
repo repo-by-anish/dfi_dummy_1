@@ -14,21 +14,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- All Product Visual Page -->
-  <url>
-    <loc>https://diamondfruitsinternational.com/products/all</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Product Redirect Page -->
-  <!-- Example: Assuming 'id' can be replaced with actual product IDs -->
-  <url>
-    <loc>https://diamondfruitsinternational.com/products/{id}</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-
   <!-- Add more URLs for other pages as needed -->
 
 </urlset>

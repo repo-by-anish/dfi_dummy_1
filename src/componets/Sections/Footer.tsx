@@ -1,7 +1,14 @@
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <motion.footer
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="footer">
+            
             <div className="footer_container">
                 <div className="footer_content">
                     <div className="fc_left">
@@ -61,7 +68,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="footer_copyright">© 2024 Diamond Fruits International. All rights reserved.</p>
-        </footer>
+        </motion.footer>
     );
 };
 

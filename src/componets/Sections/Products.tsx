@@ -3,7 +3,6 @@ import ProductCard from "../basics/ProductCard";
 import { prodDataType } from "../../api/dummydata";
 
 const Products: React.FC<{ products_to_render: prodDataType[] }> = ({ products_to_render }): JSX.Element => {
-    console.log(products_to_render);
     
     return (
         <div className="products">

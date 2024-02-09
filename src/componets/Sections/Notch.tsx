@@ -19,7 +19,7 @@ const Notch = (): JSX.Element => {
                     </>
                     )
                 }
-                <a className="notch_email" href="	dfi@diamondfruitsinternational.com">	dfi@diamondfruitsinternational.com</a>
+                <a className="notch_email" href="mailto:dfi@diamondfruitsinternational.com">	dfi@diamondfruitsinternational.com</a>
                 <div className="language">
                     <span>Language</span>
                     <select style={{ fontSize: "12px" }} name="" id="">
