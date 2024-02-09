@@ -221,6 +221,9 @@ body {
     .product__description {
         font-size: 12px;
     }
+    html{
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 600px) and (min-width: 400px) {

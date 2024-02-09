@@ -12,7 +12,7 @@ import BrandsProductsLogo from "./BrandsProductsLogo";
 
 
 const HomeSection = (): JSX.Element => {
-    useTitle("Diamond Fruits International");
+    useTitle("Diamond Fruit International");
     const { isLoading } = useData();
 
     

@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="footer_copyright">© 2024 Diamond Fruits International. All rights reserved.</p>
+            <p className="footer_copyright">© 2024 Diamond Fruit International. All rights reserved.</p>
         </motion.footer>
     );
 };
