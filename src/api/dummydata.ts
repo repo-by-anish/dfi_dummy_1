@@ -15,7 +15,7 @@ export interface prodDataType{
     prod_img: string[],
     prod_price: number,
     prod_size: string,
-    prod_specification:pecification,
+    prod_specification:FruitSpecification,
     prod_about: string,
     prod_type: string[],
     prod_width?: number
