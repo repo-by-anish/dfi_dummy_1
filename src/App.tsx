@@ -11,6 +11,7 @@ import Navigation from './componets/Sections/Navigation';
 import Scroller from './componets/basics/Scroller';
 import Progressbar from './componets/basics/Progressbar';
 import PageNotFound from './componets/Pages/PageNotFound';
+import AboutUs from './componets/Pages/AboutUs';
 function App() {
   return (
     <>
@@ -20,10 +21,12 @@ function App() {
       <Routes>
         <Route path="/*" element={<LayOut />}>
           <Route index element={<HomeSection />} />
+          <Route path="about" element={<AboutUs />} />
           <Route path="products" element={<ProductsLayOut />}>
             <Route index element={<AllProductVisual />} />
             <Route path=":id" element={<ProductRedirectPage />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
