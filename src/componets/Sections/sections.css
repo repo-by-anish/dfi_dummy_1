@@ -815,11 +815,7 @@ header {
 
 @media screen and (max-width: 600px) {
 
-    /* body{
-        overflow-x: hidden;
-    }  */
-
-    .notch a {
+    .notch .notch_email {
         display: none;
     }
 

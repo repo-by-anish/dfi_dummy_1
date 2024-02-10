@@ -1,5 +1,6 @@
 
 import { useLocation, useNavigate } from "react-router-dom";
+import SocialNav from "../basics/SocialNav";
 const Notch = (): JSX.Element => {
     const location = useLocation();
     const navigate = useNavigate();
@@ -20,6 +21,7 @@ const Notch = (): JSX.Element => {
                     )
                 }
                 <a className="notch_email" href="mailto:dfi@diamondfruitsinternational.com">dfi@diamondfruitsinternational.com</a>
+                <SocialNav/>
                 <div className="language">
                     <span>Language</span>
                     <select style={{ fontSize: "12px" }} name="" id="">
@@ -30,6 +32,7 @@ const Notch = (): JSX.Element => {
                 <button className="screen_mode icon">
                     <img style={{ width: "20px", height: "20px" }} src="https://cdn.jsdelivr.net/gh/repo-by-anish/image_for_DFI@5ad27dc969c7782fc30c67b7d3ebc13b99281871/icons/icons/moon.svg" alt="" />
                 </button>
+
             </div>
         </div>
     );

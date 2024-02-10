@@ -32,11 +32,27 @@ span {
     padding: 0;
 }
 
-.touch{
-    touch-action: none;
+.social_logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 210px;
 }
-a {
-    text-decoration: none;
+
+@media screen and (max-width: 600px) {
+    .social_logo{
+        flex-direction: column;
+        width: max-content;
+        height: max-content;
+        border-radius: 6px;
+        position: fixed;
+        background-color: var(--quaternary-color50);
+        z-index: 999;
+        padding: 8px;
+        top: 200px;
+        right: 0;
+    }
+    
 }
 
 body {

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { screenWidth } from "../../api/fetctData"
+import { Link } from "react-router-dom";
 
 const Navigation = (): JSX.Element => {
     const [open, setOpen] = useState<boolean>();
@@ -20,8 +21,8 @@ const Navigation = (): JSX.Element => {
                         <div style={{ display: open ? "none" : "block" }} className="sp-2"></div>
                         <div className={open ? "sp-3 rot45r" : "sp-3"}></div>
                     </div>
-                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="#">Home</a></li>
-                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="#about">About</a></li>
+                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><Link to="/#">Home</Link></li>
+                    <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><Link to="/about">About</Link></li>
                     <li onClick={handleClick} className={!open ? "nav__link_inactive" : "nav__link_active"}><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
